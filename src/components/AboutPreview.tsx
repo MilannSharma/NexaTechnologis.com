@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { ArrowRight, MapPin, Globe } from "lucide-react";
+import { ArrowRight, MapPin } from "lucide-react";
 
 export default function AboutPreview() {
   const sectionRef = useRef<HTMLElement | null>(null);
@@ -25,19 +25,6 @@ export default function AboutPreview() {
       }
     };
   }, []);
-
-  const smoothScrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      const offset = 80;
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.scrollY - offset;
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-    }
-  };
 
   return (
     <section 

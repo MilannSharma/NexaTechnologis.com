@@ -114,7 +114,7 @@ export default function HowWeWork() {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"
           }`}
         >
-          {stepsData.map((step, idx) => {
+          {stepsData.map((step) => {
             const StepIcon = step.icon;
             return (
               <div 
