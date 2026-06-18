@@ -1,0 +1,27 @@
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  // Use ESLint as the validator for TSX/TS — this suppresses raw TS/HTML
+  // inline-style warnings that are not controlled by your ESLint config.
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "eslint.useFlatConfig": true,
+  // Disable the built-in VS Code CSS/HTML validator squiggles that flag
+  // inline styles — ESLint handles those rules instead.
+  "css.validate": false,
+  "html.validate.styles": false,
+  "typescript.preferences.quoteStyle": "double",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
